@@ -1,0 +1,43 @@
+.graph {
+  width: calc(100%);
+  transform: translateX(-1em);
+  background-color: #EEEEF1;
+  padding: 0.5em 1em 0 1em;
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+}
+
+.graph>.slideticks {
+  border-top: 1px solid gray;
+  padding: 1em 2em;
+  color: gray;
+  flex-grow: unset;
+}
+
+.graph>.slideticks>span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 1px;
+  background: #D3D3D3;
+  height: 10px;
+  line-height: 40px;
+  margin: -1em 0 20px 0;
+}
+
+svg {
+  flex-grow: 1;
+  width: calc(100% + 6em);
+  transform: translateX(-3em);
+  clip-path: polygon(3em 0, calc(100% - 3em) 0, calc(100% - 3em) 100%, 3em 100%);
+}
+
+polyline {
+  transform: scaleY(-1);
+}
+
+.label {
+  fill: gray;
+}

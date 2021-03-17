@@ -1,0 +1,48 @@
+.snow {
+  background: none;
+  background-image: url(../img/snow/1.png), url(../img/snow/2.png), url(../img/snow/3.png);
+  height: calc(100% - 0.5em);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  animation: snow 10s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 0px 1000px, 0px 400px, 0px 300px;
+  }
+}
+
+@-moz-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 0px 1000px, 0px 400px, 0px 300px;
+  }
+}
+
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 0px 1000px, 0px 400px, 0px 300px;
+  }
+}
+
+@-ms-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 0px 1000px, 0px 400px, 0px 300px;
+  }
+}

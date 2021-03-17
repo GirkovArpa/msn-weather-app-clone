@@ -1,0 +1,19 @@
+.app.lightning {
+  background-color: rgba(255, 255, 255, 0);
+  animation-name: lightning;
+  animation-delay: 5s;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes lightning {
+  1% {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  30% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}

@@ -1,0 +1,164 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <title>MSN Weather Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/panels.css">
+    <link rel="stylesheet" href="css/graph.css">
+    <link rel="stylesheet" href="css/snow.css">
+    <link rel="stylesheet" href="css/rain.css">
+    <link rel="stylesheet" href="css/lightning.css">
+    <meta name="theme-color" content="#fafafa">
+  </head>
+
+  <body>
+    <div class="col app">
+      <div class="row header">
+        <div class="col">
+          <span class="location ghost-1">New York, New York</span>
+          <span class="updated ghost-2">Updated February 9th, 8:05 PM</span>
+        </div>
+      </div>
+      <div class="row today">
+        <div class="col w-50 max-content">
+          <div class="row">
+            <div class="col icon-today">
+              <img src="img/misc/iconcode_omw_white_75x75_30.png" />
+            </div>
+            <div class="col temp-today">19</div>
+            <div class="col temp-units ghost-2">
+              <span>F</span>
+              <span class="ghost-3">C</span>
+            </div>
+            <div class="col temps-today ghost-1">
+              <span>42</span>
+              <span>20</span>
+            </div>
+          </div>
+          <div class="row description ghost-1">
+            <span>Mostly Clear</span>
+            <span class="wide">-</span>
+            <span>Thu 9, 8:50 PM</span>
+          </div>
+        </div>
+        <div class="col w-50 misc ghost-2">
+          <span class="precipitation">Precipitation: 10%</span>
+          <span class="wind">Wind: 19 MPH</span>
+          <span class="humidity">Humidity: 62%</span>
+        </div>
+      </div>
+      <div class="row slideticks ghost-2">
+        <span>9 PM</span>
+        <span>12 AM</span>
+        <span>3 AM</span>
+        <span>6 AM</span>
+        <span>9 AM</span>
+        <span>12 PM</span>
+        <span>3 PM</span>
+        <span>6 PM</span>
+      </div>
+      <div class="row slidecontainer">
+        <input type="range" min="1" max="8" value="1" class="slider" id="myRange">
+      </div>
+      <div class="panels row">
+        <div class="panel col selected">
+          <span>Thu 9</span>
+          <img src="img/misc/iconcode_omw_white_75x75_30.png" />
+          <span>42</span>
+          <span>20</span>
+          <span>10</span>
+        </div>
+        <div class="panel col">
+          <span>Fri 10</span>
+          <img src="img/misc/iconcode_omw_white_75x75_1.png" />
+          <span>30</span>
+          <span>28</span>
+          <span>60</span>
+        </div>
+        <div class="panel col">
+          <span>Sat 11</span>
+          <img src="img/misc/iconcode_omw_white_75x75_5.png" />
+          <span>44</span>
+          <span>36</span>
+          <span>70</span>
+        </div>
+        <div class="panel col">
+          <span>Sun 12</span>
+          <img src="img/misc/iconcode_omw_white_75x75_8.png" />
+          <span>45</span>
+          <span>36</span>
+          <span>100</span>
+        </div>
+        <div class="panel col">
+          <span>Mon 13</span>
+          <img src="img/misc/iconcode_omw_white_75x75_1.png" />
+          <span>46</span>
+          <span>30</span>
+          <span>100</span>
+        </div>
+        <div class="panel col">
+          <span>Tue 14</span>
+          <img src="img/misc/iconcode_omw_white_75x75_5.png" />
+          <span>40</span>
+          <span>33</span>
+          <span>40</span>
+        </div>
+        <div class="panel col">
+          <span>Wed 15</span>
+          <img src="img/misc/iconcode_omw_white_75x75_3.png" />
+          <span>38</span>
+          <span>27</span>
+          <span>50</span>
+        </div>
+      </div>
+      <div class="graph">
+        <svg viewBox="0 -100 900 100" class="chart">
+          <defs>
+            <marker id="red-circle" viewBox="0 0 10 10" refX="5" refY="5" orient="auto">
+              <circle fill="transparent" cx="5" cy="5" r="5" />
+            </marker>
+          </defs>
+          <polyline fill="#FEF9CC" stroke="#FED225" stroke-width="2" points="
+              0, 0
+              100, 23
+              200, 21
+              300, 20
+              400, 20
+              500, 23
+              600, 28
+              700, 30
+              800, 30
+              900, 30
+              0, -99999
+              0, 0
+             " marker-start="url(#red-circle)" marker-end="url(#red-circle)" marker-mid="url(#red-circle)" />
+        </svg>
+        <div class="row slideticks ghost-2">
+          <span>9 PM</span>
+          <span>12 AM</span>
+          <span>3 AM</span>
+          <span>6 AM</span>
+          <span>9 AM</span>
+          <span>12 PM</span>
+          <span>3 PM</span>
+          <span>6 PM</span>
+        </div>
+      </div>
+    </div>
+    <script src="js/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/graph.js"></script>
+    <script src="js/api.js"></script>
+  </body>
+
+</html>

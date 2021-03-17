@@ -1,0 +1,51 @@
+.panels {
+  margin: 2em 0 0 0;
+  gap: 4px;
+}
+
+.panel {
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75em;
+  padding: 0.5em 0;
+  cursor: pointer;
+}
+
+
+.panel.selected {
+  background-color: #EEEEF1;
+  border-top: 3px solid yellow;
+  padding-top: 3px;
+}
+
+.panel:not(.selected)>span:last-child {
+  color: rgb(56, 120, 172);
+  font-weight: 600;
+}
+
+.panel>img {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  filter: drop-shadow(2px 0 0 black);
+}
+
+.panel>span:last-child {
+  color: rgba(107, 173, 227, 1);
+  transform: translateX(-3px);
+  margin-top: 0.5em;
+}
+
+.panel>span:last-child::before {
+  content: url('../raindrop.png');
+  vertical-align: middle;
+}
+
+.panel>span:last-child::after {
+  content: '%';
+}
+
+.panel>span:nth-last-child(2)::after, .panel>span:nth-last-child(3)::after {
+  content: '°';
+}
